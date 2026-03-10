@@ -1,16 +1,61 @@
-# Backend
-backend/target/
-backend/*.log
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
 
-# Frontend
-frontend/node_modules/
-frontend/dist/
-
-# IDE / OS
+# =========================
+# IDE
+# =========================
 .idea/
 .vscode/
-.DS_Store
+*.iml
 
-# Env
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Env files
+# =========================
 .env
-*.env
+.env.*
+!.env.example
+
+# =========================
+# Backend - Spring Boot / Maven
+# =========================
+backend/target/
+backend/out/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# =========================
+# Frontend - React / Node / Vite
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.vite/
+frontend/coverage/
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# =========================
+# Coverage / Reports
+# =========================
+coverage/
+*.lcov
+
+# =========================
+# Temp
+# =========================
+tmp/
+temp/
